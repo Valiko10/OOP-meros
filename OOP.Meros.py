@@ -334,6 +334,35 @@ class Ishchi(Kompaniya):
 
 
 
+class Shaxs:
+#     def __init__(self, ismi , yoshi , ishlashjoyi):
+#         self.name = ismi
+#         self.age = yoshi
+#         self.work = ishlashjoyi
+
+#     def get_info(self):
+#         return f"Ismi {self.name} \nYoshi {self.age}\nIsh joyi {self.work}"
+    
+# class Talaba(Shaxs):
+#     def __init__(self, ismi, yoshi, ishlashjoyi , oqish_vaqti ):
+#         super().__init__(ismi, yoshi, ishlashjoyi)
+#         self.vaqti = oqish_vaqti
+
+#     def info(self):
+#         return f"{self.get_info()}\nO'qish vaqti {self.vaqti}"
+    
+# class Ustoz(Shaxs):
+#     def __init__(self, ismi, yoshi, ishlashjoyi , darslari_vaqti , malumot_darajasi):
+#         super().__init__(ismi, yoshi, ishlashjoyi)
+#         self.darslar = darslari_vaqti
+#         self.malumot = malumot_darajasi
+
+#     def teacher_info(self):
+#         return f"{self.get_info()}\nDarslari jami vaqti {self.darslar}\nMalumot darajasi {self.malumot}"
+
+# odam = Ustoz("Odilbek" , "45 yosh" , "20-sonli maktab" , 20 , "o'rta")
+          
+# print(odam.teacher_info())
 
 
 
