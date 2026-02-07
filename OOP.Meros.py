@@ -310,31 +310,84 @@
 # print(lenovo.notebook_info())
 
 
-class Kompaniya:
-    def __init__(self , ish_vaqti , ishlab_chiqariluvchi_mahsulot , daromad):
-        self.ishvaqti = ish_vaqti
-        self.mahsulot = ishlab_chiqariluvchi_mahsulot
-        self.daromad = daromad
+# class Kompaniya:
+#     def __init__(self , ish_vaqti , ishlab_chiqariluvchi_mahsulot , daromad):
+#         self.ishvaqti = ish_vaqti
+#         self.mahsulot = ishlab_chiqariluvchi_mahsulot
+#         self.daromad = daromad
 
-    def get_Kampaniya(self):
-        return f"Kampaniya {self.ishvaqti} gacha ishlaydi.\nishlab chiqariluvchi mahsulot {self.mahsulot}\nKampaniya daromadi {self.daromad}\n"
+#     def get_Kampaniya(self):
+#         return f"Kampaniya {self.ishvaqti} gacha ishlaydi.\nishlab chiqariluvchi mahsulot {self.mahsulot}\nKampaniya daromadi {self.daromad}\n"
 
-class Ishchi(Kompaniya):
-    def __init__(self, ish_vaqti, ishlab_chiqariluvchi_mahsulot, daromad , ish_bolimi , smena):
-        super().__init__(ish_vaqti, ishlab_chiqariluvchi_mahsulot, daromad)
-        self.ishbolimi = ish_bolimi
-        self.smena  = smena
+# class Ishchi(Kompaniya):
+#     def __init__(self, ish_vaqti, ishlab_chiqariluvchi_mahsulot, daromad , ish_bolimi , smena):
+#         super().__init__(ish_vaqti, ishlab_chiqariluvchi_mahsulot, daromad)
+#         self.ishbolimi = ish_bolimi
+#         self.smena  = smena
 
-    def 
-
-
+#     def 
 
 
 
 
 
+# class Telefon:
+#     def __init__(self ,nomi ,  hotira , aperativ_hotira , prosesor , ):
+#         self.hotira = hotira
+#         self.aperativ_hotira = aperativ_hotira
+#         self.pratsesor = prosesor
+#         self.name = nomi
 
-class Shaxs:
+#     def phone_info(self):
+#         return f"Telefon nomi {self.name}\nTelefon hotirasi {self.hotira}GB\nTelefonimizni aperativ hotirasi {self.aperativ_hotira}GB\nTelefon prosesori {self.pratsesor}"
+
+# class Notebook(Telefon):
+#     def __init__(self, nomi, hotira, aperativ_hotira, prosesor , ekrani_olchami , disk_turi  ):
+#         super().__init__(nomi, hotira, aperativ_hotira, prosesor)
+#         self.screen = ekrani_olchami
+#         self.disk = disk_turi
+
+#     def noteboook_info(self):
+#         return f"{self.phone_info()}\nEkrani o'lchami {self.screen} \nDisk turi {self.disk}"
+
+# Lenevo = Notebook('Lenevo ipad slim' , 512 , 8 , "intel core I7 1375H" , "15,8 dyumm" , "SSD")
+# print(Lenevo.noteboook_info())
+
+
+# class Transport:
+#     def __init__(self , yoqilgi_turi , model  ):
+#         self.model = model
+#         self.yoqilgi = yoqilgi_turi
+    
+#     def info_Transport(self):
+#         return f"Modeli {self.model} \nUshbu transportni {self.yoqilgi} yoqilg'isida yuradi  "
+
+# class Avtobus(Transport):
+#     def __init__(self, yoqilgi_turi, model , orindiqlarsoni):
+#         super().__init__(yoqilgi_turi, model)
+#         self.orindiqlar = orindiqlarsoni
+
+#     def get_avtobus(self):
+#         return f"{self.info_Transport()}\nAvtobusda {self.orindiqlar} ta o'rindiq bor"
+
+# class Poyezd(Transport):
+#     def __init__(self, yoqilgi_turi, model , turi ):
+#         super().__init__(yoqilgi_turi, model)
+#         self.turi = turi
+
+#     def info(self):
+#         return f"{self.info_Transport()}\nPoyezdni turi {self.turi}"
+
+# transport_ = Poyezd('benzin' , "Xitoy" , "tezyurar")
+
+# print(transport_.info())
+
+
+
+
+
+
+# class Shaxs:
 #     def __init__(self, ismi , yoshi , ishlashjoyi):
 #         self.name = ismi
 #         self.age = yoshi
@@ -365,6 +418,104 @@ class Shaxs:
 # print(odam.teacher_info())
 
 
+
+
+
+# class Maxsulot:
+#     def __init__(self , nomi , vazni , narxi):
+#         self.kg = vazni 
+#         self.narxi = narxi
+#         self.nomi = nomi
+#     def info(self):
+#         return f"Maxsulot {self.nomi} \nUshbu maxsulot {self.kg} \nMaxsulot narxi {self.narxi} "
+
+
+# class Meva(Maxsulot):
+#     def __init__(self, nomi, vazni, narxi , rangi ,  ):
+#         super().__init__(nomi, vazni, narxi)
+#         self.rangi = rangi
+         
+
+#     def get_meva(self):
+#         return f"{self.info()}\nMevanig rangi {self.rangi} \n"
+
+
+# banana = Meva("Olma" , "5-kilogram" , "12000" , "Qizil" , )
+
+
+# print(banana.get_meva())
+
+
+# class Bino:
+#     def __init__(self ,  qavat_soni , vazifasi,  ):
+#         self.vazifa = vazifasi
+#         self.qavat = qavat_soni
+#     def info(self):
+#         return f"Qavatlar soni {self.qavat}\nVazifasi {self.vazifa}"
+
+# class Uy(Bino):
+#     def __init__(self,  qavat_soni, vazifasi , kichik_ombor):
+#         super().__init__( qavat_soni, vazifasi)
+#         self.ombor = kichik_ombor
+
+#     def get_info(self):
+#         return f"{self.info()}\nKichkin ombori {self.ombor}"
+
+
+# villa = Uy(2 , "yashash uchun" , "bor")
+
+# print(villa.get_info())
+
+
+# 22
+
+
+
+# class Kitob:
+#     def __init__(self , nomi , narxi , varoqlari_soni):
+#         self.nomi =nomi
+#         self.narxi = narxi
+#         self.varoqlar = varoqlari_soni
+    
+#     def info(self):
+#         return f"Kitob nomi {self.nomi} \nNarxi {self.narxi} \nVaroqlari soni {self.varoqlar}"
+
+# class Elektiron_kitob(Kitob):
+#     def __init__(self, nomi, narxi, varoqlari_soni , mb_hajmi , ):
+#         super().__init__(nomi, narxi, varoqlari_soni)
+#         self.mb = mb_hajmi
+
+#     def get_book(self):
+#         return f"{self.info()}\nKitobni hajmi {self.mb}"
+
+# ma = Elektiron_kitob(1984 , 100 , 245 , "17 mb")
+
+# print(ma.get_book())
+
+
+# 23
+
+# class Car:
+#     def __init__(self , nomi , madeli , tezligi , ):
+#         self.nomi = nomi
+#         self.madel = madeli
+#         self.tezligi = tezligi
+
+#     def info(self):
+#         return f"Nomi {self.nomi} \nMadeli {self.madel} \nTezligi {self.tezligi}"
+
+# class Elektro_car(Car):
+#     def __init__(self, nomi, madeli, tezligi , rangi , akumuliyatori):
+#         super().__init__(nomi, madeli, tezligi)
+#         self.rangi = rangi
+#         self.akumiliyato = akumuliyatori
+
+#     def get_elektro(self):
+#         return f"{self.info()} \nRangi {self.rangi} \nAkumliyatori {self.akumiliyato}"
+
+# mers = Elektro_car("Li9" , "Li" , 220 , "qora " , "250 km ga yetadi")
+
+# print(mers.get_elektro())
 
 
 
