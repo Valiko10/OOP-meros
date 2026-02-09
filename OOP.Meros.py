@@ -518,6 +518,82 @@
 # print(mers.get_elektro())
 
 
+# 24
+
+class kalkuliyator:
+    def __init__(self , hisoblash ):
+        self.hisoblash = hisoblash
+
+
+    def kalk_info(self):
+        return f"Ushbu kalikulator {self.hisoblash} amalini bajaradi "
+
+class Python(kalkuliyator):
+    def  __init__(self, hisoblash , funksiyalar):
+        super().__init__(hisoblash)
+        self.funksiyalar = funksiyalar
+    
+    def funksiya(self):
+        return f"{self.kalk_info()} pythonda yana {self.funksiyalar} ham bor"
+
+bolish = Python("ko'paytirish" , "meroshorlik ")
+
+print(bolish.funksiya())
+
+
+
+
+
+# 25
+
+class Hayvon:
+    def __init__(self , hayvon_turi , oilasi ):
+        self.hayvon = hayvon_turi
+        self.oilasi = oilasi
+        
+    def info(self):
+        return f"Bu {self.hayvon} hayvoni \n{self.oilasi} oilasiga kiradi "
+
+class Kush(Hayvon):
+    def __init__(self, hayvon_turi, oilasi , uchish):
+        super().__init__(hayvon_turi, oilasi)
+        self.uchish = uchish 
+        
+    def bird(self):
+        return f"{self.info()} \nBu hayvon uchishni {self.uchish}"
+
+tuyaqush = Kush("tuyaqush" , "qushsimonlar " , "bilmaydi" )
+xoroz = Kush("Xo'roz" , "qushsimonlar " , "biroz")
+print(xoroz.bird())
+
+print(tuyaqush.bird())
+
+# 26
+
+class maktab:
+    def __init__(self , soni , oquvchilar ):
+        self.soni = soni
+        self.oquvchilar = oquvchilar
+        
+    def maktab_info(self):
+        return f"maktabni raqami {self.soni} \nBu maktabda jami {self.oquvchilar} o'quvchilar o'qiydi"
+
+class Sinf(maktab):
+    def __init__(self, soni, oquvchilar , bolalar ):
+        super().__init__(soni, oquvchilar)
+        self.bolalar = bolalar
+        
+    def sinf_info(self):
+        return f"{self.maktab_info()}\nSinf da jami {self.bolalar} o'qiydi"
+
+mashhur = Sinf(20 , 1086 , 25)
+print(mashhur.sinf_info())
+
+
+
+
+
+
 
 
 
