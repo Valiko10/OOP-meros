@@ -591,6 +591,135 @@ print(mashhur.sinf_info())
 
 
 
+# 27
+
+# class Avto:
+#     def __init__(self , rusum , nomi , yili , rangi):
+#         self.rusum = rusum
+#         self.nomi = nomi
+#         self.yili = yili
+#         self.rang = rangi 
+
+#     def info(self):
+#         return f"Rusumi {self.rusum} \nNomi {self.nomi} \nYili {self.yili} \nRangi {self.rang}"
+    
+# class mersedes(Avto):
+#     def __init__(self, rusum, nomi, yili, rangi , clasi):
+#         super().__init__(rusum, nomi, yili, rangi)
+#         self.clasi = clasi
+
+#     def Mersedes_info(self):
+#         return f"{self.info()}\nMashina clasi {self.clasi}"
+
+
+# class Chevrolet(Avto):
+#     def __init__(self, rusum, nomi, yili, rangi , akumuliyator):
+#         super().__init__(rusum, nomi, yili, rangi)
+#         self.akumuliyator = akumuliyator
+
+#     def chevrolet_info(self):
+#         return f"{self.info()} \nBu mashinani akumuliyatori {self.akumuliyator} Wat kuchga ega"
+
+# Gelik = mersedes('Mersedes' , "gelik" , 2026 , "Qora" , "G class")
+# Captiva = Chevrolet("Chevrolet" , "Captiva" , 2019 , "Qora" , "25")
+
+# print(Captiva.chevrolet_info() ,\n ,Gelik.Mersedes_info())
+
+
+
+# class Texnika:
+#     def __init__(self , nomi , vazifasi , narxi ):
+#         self.nomi = nomi
+#         self.vazifasi = vazifasi
+#         self.narxi = narxi
+
+
+#     def texnika_info(self):
+#         return f"texnikani nomi {self.nomi} \nVazifasi {self.vazifasi} \nUshbu texnikamiz {self.narxi} so'm turadi"
+
+# class Printer(Texnika):
+#     def __init__(self, nomi, vazifasi, narxi , ranglari_soni):
+#         super().__init__(nomi, vazifasi, narxi)
+#         self.ranglari = ranglari_soni
+
+#     def printer_info(self):
+#         return f"{self.texnika_info()}\nBu Printer {self.ranglari} ta rangda ishlaydi"
+
+# class Skaner(Texnika):
+#     def __init__(self, nomi, vazifasi, narxi , aniqlikdarajasi):
+#         super().__init__(nomi, vazifasi, narxi)
+#         self.aniqlik = aniqlikdarajasi
+
+#     def Skaner_info(self):
+#         return f"{self.texnika_info()}\nSkanerning aniqlik darajasi {self.aniqlik} darajada"
+
+
+# pro_print = Printer("Printer" , "Chop etish" , 500 , 6 )
+# pro_skan = Skaner("skaner" , "QR ko'dlarni o'qish" , 105 ," O'rta")
+
+# print(pro_print.printer_info())
+
+# print(pro_skan.Skaner_info())
+
+
+
+# 29
+
+
+# class Sportchi:
+#     def __init__(self , sport_turi , sportchi_ismi , yoshi):
+#         self.sport = sport_turi
+#         self.name = sportchi_ismi
+#         self.age = yoshi
+
+#     def info(self):
+#         return f"sport turi {self.sport} \n Ismi {self.name} \nYoshi {self.age} "
+    
+
+# class Futbolchi(Sportchi):
+#     def __init__(self, sport_turi, sportchi_ismi, yoshi , gollari_soni , tezligi):
+#         super().__init__(sport_turi, sportchi_ismi, yoshi)
+#         self.gollar = gollari_soni
+#         self.speed = tezligi
+    
+#     def fotball_core(self):
+#         return f"{self.info()}\nGollari soni {self.gollar}\nTezligi {self.speed}"
+
+# Pele = Futbolchi("Futbolchi" , "Pele" , "28" , 1205 , 35)
+# print(Pele.fotball_core())
+
+
+
+# 30
+
+
+# class Student:
+#     def __init__(self , ismi , yoshi , kursi , yonalishi):
+#         self.name = ismi
+#         self.age = yoshi
+#         self.level = kursi 
+#         self.yonalish = yonalishi
+
+#     def info(self):
+#         return f"Studentni ismi {self.name} \nyoshi {self.age}\nStudent {self.level}-Kursda o'qiydi \nYonalishi {self.yonalish}"
+
+
+# class talaba(Student):
+#     def __init__(self, ismi, yoshi, kursi, yonalishi ):
+#         super().__init__(ismi, yoshi, kursi, yonalishi)
+
+#     def get(self):
+#         return self.info()
+  
+
+
+# Ulli = talaba("bagandikov" , "3 oyik" , 4 , "aasdfghjk")
+# print(Ulli.get())
+
+
+# 33
+
+
 
 
 
